@@ -1,10 +1,1 @@
----
-layout: post
-title: You're up and running!
----
-
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+I am a Doctoral Researcher (FPI grant holder) in Computer Security and Privacy at the Universitat Rovira i Virgili (URV), Spain. Prior to joining URV, I was a PhD student in Electrical Engineering (Communication Systems) at Shiraz University, Iran, a program from which I withdrew for personal reasons. I have also worked as a remote Research Assistant at the University of Greenwich, focusing on Security for AI and AI for Security, and previously as a Cybersecurity Researcher at the Iran Telecommunication Research Center (ITRC). I received my B.Sc. degree in 2018 and my M.Sc. degree in 2022, both in Electrical Engineering (Communication Systems), from K. N. Toosi University of Technology, Tehran, Iran. I am deeply interested in conducting and collaborating on high-quality research in the areas of security and privacy, artificial intelligence, and distributed systems. Alongside developing my technical expertise, I actively seek broader, general knowledge to foster personal and intellectual growth. My hobbies and interests include art and literature. I am an avid reader of novels and occasionally write short stories.
