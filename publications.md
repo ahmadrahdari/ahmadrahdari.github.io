@@ -1,4 +1,6 @@
-# Publications
+---
+title: "Publications"
+---
 
 - **A. Rahdari** and B. Akhbari, “SKE2SG: A Secure Key Establishment Scheme for Smart Grid Cyber-Physical Systems based on Elliptic Curve Cryptography,” *IET Cyber-Physical Systems: Theory & Applications*. *(Under Review, Revise 3 Submitted)*
 
