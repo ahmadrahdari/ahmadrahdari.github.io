@@ -164,11 +164,13 @@ img {
 }
 
 .site-avatar img {
-    width: 200px;
+    width: 200px;        /* اندازه جدید */
     height: 200px;
-    border-radius: 50%; 
-    object-fit: cover;   
-};
+    border-radius: 50%;  /* دایره‌ای شدن */
+    object-fit: cover;   /* پر شدن بدون کش آمدن */
+    display: block;      /* از float یا inline بهتر است */
+}
+
 
   @include mobile {
     float: none;
