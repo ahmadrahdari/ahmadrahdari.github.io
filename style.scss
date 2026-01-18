@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
-
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -51,27 +50,16 @@ h1 {
   }
 }
 
-h2 {
-  font-size: 24px;
-}
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; color: $gray; }
 
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
-}
+p { margin: 15px 0; }
 
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
@@ -82,38 +70,19 @@ ul, ol {
   padding-left: 30px;
 }
 
-ul {
-  list-style-type: disc;
-}
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
 
-ol {
-  list-style-type: decimal;
-}
+ol ul, ul ol, ul ul, ol ol { margin: 0; }
+ul ul, ol ul { list-style-type: circle; }
 
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
+em, i { font-style: italic; }
+strong, b { font-weight: bold; }
 
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
+img { max-width: 100%; }
 
 // Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
+.gmnoprint img { max-width: none; }
 
 .date {
   font-style: italic;
@@ -121,26 +90,13 @@ img {
 }
 
 // Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
+::-moz-selection { color: $black; background: $lightGray; }
+::selection { color: $black; background: $lightGray; }
 
 // Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
+.clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
 
 /*********************/
 /* LAYOUT / SECTIONS */
@@ -150,9 +106,7 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
+.wrapper-masthead { margin-bottom: 50px; }
 
 .masthead {
   padding: 20px 0;
@@ -169,24 +123,18 @@ img {
   height: 200px;
   margin-right: 15px;
 
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
-  }
-
-  img {
-    width: 200px;       // اندازه واقعی تصویر
-    height: 200px;
-    border-radius: 50%; // دایره‌ای شدن
-    object-fit: cover;  // تصویر بدون کش آمدن پر شود
-    display: block;
-  }
-}
-
-
-  img {
-    border-radius: 5px;
   }
 }
 
@@ -271,10 +219,7 @@ nav {
     font-style: italic;
   }
 
-  .comments {
-    margin-top: 10px;
-  }
-
+  .comments { margin-top: 10px; }
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
@@ -294,8 +239,6 @@ footer svg {
   display: inline-block;
 }
 
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+// Syntax highlighting and SVG icons
 @import "highlights";
 @import "svg-icons";
