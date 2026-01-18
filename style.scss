@@ -163,14 +163,11 @@ img {
   }
 }
 
-.site-avatar img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%; 
-    object-fit: cover;   
-}
-
-
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
 
   @include mobile {
     float: none;
