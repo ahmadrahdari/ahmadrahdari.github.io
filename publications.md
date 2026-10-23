@@ -2,7 +2,7 @@
 title: "Publications"
 ---
 
-- **A. Rahdari** and B. Akhbari, “SKE2SG: A Secure Key Establishment Scheme for Smart Grid Cyber-Physical Systems based on Elliptic Curve Cryptography,” *IET Cyber-Physical Systems: Theory & Applications*. *(Under Review, Revise 3 Submitted)*
+- **A. Rahdari** and B. Akhbari, “SKE2SG: A Secure Key Establishment Scheme for Smart Grid Cyber-Physical Systems based on Elliptic Curve Cryptography,” *IET Cyber-Physical Systems: Theory & Applications*. *11.1: e70045, 2026.* https://doi.org/10.1049/cps2.70045
 
 - E. Nowroozi, M. Mohammadi, **A. Rahdari**, R. Taheri, and M. Conti, “A Random Deep Feature Selection Approach to Mitigate Transferable Adversarial Attacks,” *IEEE Transactions on Network and Service Management*, 2025. [https://doi.org/10.1109/TNSM.2025.3594253](https://doi.org/10.1109/TNSM.2025.3594253)
 
