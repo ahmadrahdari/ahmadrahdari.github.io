@@ -233,6 +233,7 @@ ol.pubs-numbered .pub::before {
 .photo-strip figure { margin: 0; }
 .photo-strip img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; background: var(--tint); }
 .photo-strip figcaption { font-size: 0.875rem; color: var(--ink-2); margin-top: 8px; line-height: 1.4; }
+.photo-strip figcaption span { display: block; color: var(--ink-3); font-size: 0.8125rem; margin-top: 2px; }
 @media (max-width: 860px) { .photo-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* ---------- contact ---------- */
