@@ -1,18 +1,233 @@
----
-layout: default
----
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmad Rahdari, security and privacy researcher</title>
+  <meta name="description" content="Ahmad Rahdari is a PhD researcher at Universitat Rovira i Virgili working on post-quantum cryptographic protocols, TLS oracles and data provenance.">
+  <meta name="author" content="Ahmad Rahdari">
+  <link rel="canonical" href="https://ahmadrahdari.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ahmad Rahdari, security and privacy researcher">
+  <meta property="og:description" content="Ahmad Rahdari is a PhD researcher at Universitat Rovira i Virgili working on post-quantum cryptographic protocols, TLS oracles and data provenance.">
+  <meta property="og:url" content="https://ahmadrahdari.github.io/">
+  <meta property="og:image" content="https://ahmadrahdari.github.io/assets/img/profile-square.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#fbfbf9">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/lmroman17-regular-web.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ahmad Rahdari", "url": "https://ahmadrahdari.github.io/", "image": "https://ahmadrahdari.github.io/assets/img/profile-square.jpg", "email": "mailto:ahmad.rahdari@urv.cat", "jobTitle": "PhD researcher in security and privacy", "affiliation": {"@type": "CollegeOrUniversity", "name": "Universitat Rovira i Virgili", "url": "https://www.urv.cat/en/"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "K. N. Toosi University of Technology"}, "knowsAbout": ["Post-quantum cryptography", "TLS oracles", "Data provenance", "Authentication protocols", "Formal protocol verification", "Adversarial machine learning"], "sameAs": ["https://scholar.google.com/citations?user=c0KZnqcAAAAJ", "https://orcid.org/0000-0002-6368-1435", "https://www.linkedin.com/in/ahmad-rahdari", "https://github.com/ahmadrahdari"]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">Ahmad Rahdari</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 4h14M1 8h14M1 12h14" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>Menu
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="/#research">Research</a></li><li><a href="/publications/">Publications</a></li><li><a href="/cv/">CV</a></li><li><a href="/gallery/">Gallery</a></li><li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="name">
+    <div class="wrap">
+      <figure class="portrait">
+        <picture>
+          <source type="image/webp" srcset="/assets/img/profile.webp">
+          <img src="/assets/img/profile.jpg" alt="Portrait of Ahmad Rahdari" width="900" height="880" fetchpriority="high">
+        </picture>
+        <ul class="links">
+          <li><a href="mailto:ahmad.rahdari@urv.cat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13A1.5 1.5 0 0 1 3.5 4Zm.5 2.6V18h16V6.6l-8 6.1-8-6.1ZM5.9 6 12 10.7 18.1 6H5.9Z"/></svg>Email</a></li>
+            <li><a href="https://scholar.google.com/citations?user=c0KZnqcAAAAJ&hl=en" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Google Scholar</a></li>
+            <li><a href="https://orcid.org/0000-0002-6368-1435" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>ORCID</a></li>
+            <li><a href="https://www.linkedin.com/in/ahmad-rahdari" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zM8 19H5V9h3v10zM6.5 7.7c-1 0-1.7-.8-1.7-1.7S5.5 4.3 6.5 4.3 8.2 5 8.2 6s-.7 1.7-1.7 1.7zM19 19h-3v-5.2c0-1.3 0-3-1.8-3s-2.2 1.4-2.2 2.9V19h-3V9h2.9v1.4h.1c.4-.7 1.4-1.6 3-1.6 3.2 0 3.8 2.1 3.8 4.9V19z"/></svg>LinkedIn</a></li>
+            <li><a href="https://github.com/ahmadrahdari" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a></li>
+        </ul>
+      </figure>
+      <div>
+        <h1 id="name">Ahmad Rahdari</h1>
+        <p class="role">PhD researcher in security and privacy</p>
+        <p class="affiliation">Department of Computer Engineering and Mathematics<br><a href="https://www.urv.cat/en/" rel="noopener">Universitat Rovira i Virgili</a>, Tarragona, Spain</p>
+        <div class="lede">
+          <p>I am a predoctoral researcher and FPI grant holder at Universitat Rovira i Virgili, supervised by <a href="https://rolandotr.github.io/" rel="noopener">Dr. Rolando Trujillo Rasúa</a>. My doctoral work is on post-quantum cryptographic protocols and data provenance, in particular designated-commitment TLS, better known as TLS oracles.</p>
+          <p>Before URV, I worked on adversarial machine learning as a remote research assistant at the University of Greenwich, on IoT privacy at Shaoxing University, and on cybersecurity workforce planning at the Iran Telecommunication Research Center. I studied Electrical Engineering (Communication Systems) at K. N. Toosi University of Technology in Tehran.</p>
+        </div>
+        <p class="index-terms"><em>Index Terms</em>&mdash;Post-quantum cryptography, TLS oracles, data provenance, authentication and key agreement, formal protocol verification, adversarial machine learning.</p>
+        <div class="page-actions">
+          <a class="btn" href="/files/Ahmad_Rahdari_CV.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" stroke-linecap="round" stroke-linejoin="round"/></svg>Download CV</a>
+          <a class="btn btn-quiet" href="/publications/">Publications</a>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  <section class="section" id="research" aria-labelledby="research-title">
+    <div class="wrap">
+      <h2 class="section-title" id="research-title">Research</h2>
+      <div class="section-body">
+        <p>I design and analyse cryptographic protocols, and use formal tools such as Tamarin, AVISPA and Scyther to check that they deliver the security they claim. My current focus is making TLS oracles hold up against quantum adversaries.</p>
+        <dl class="themes">
+          <div><dt>Cryptographic and decentralized protocols</dt><dd>Post-quantum TLS oracles, key establishment for smart grids, and handover authentication for 6G vehicular networks.</dd></div>
+          <div><dt>Security and privacy in computer systems</dt><dd>Distributed and federated systems, SDN-enabled IoT, and privacy in cloud computing.</dd></div>
+          <div><dt>AI for security, and security for AI</dt><dd>Adversarial machine learning, transferable attacks on intrusion detection, and watermarking in federated learning.</dd></div>
+        </dl>
+        <figure class="figure">
+            <div style="overflow-x:auto">
+            <svg class="msc" viewBox="0 0 720 352" role="img" aria-labelledby="fig1-title fig1-desc" style="min-width:560px">
+              <title id="fig1-title">How a TLS oracle works</title>
+              <desc id="fig1-desc">A prover opens a TLS session with a server, receives encrypted data, then commits to the transcript and proves to a verifier that the data came from that server. The verifier accepts the data's provenance.</desc>
+              <defs>
+                <style>.msc .msg text { paint-order: stroke; stroke: #fff; stroke-width: 6px; stroke-linejoin: round; }</style>
+              </defs>
+              <g class="actor"><rect x="20" y="8" width="150" height="48" rx="4"/><text x="95" y="29">Prover</text><text class="sub" x="95" y="46">client</text></g>
+              <g class="actor"><rect x="285" y="8" width="150" height="48" rx="4"/><text x="360" y="29">TLS server</text><text class="sub" x="360" y="46">e.g. a bank or an API</text></g>
+              <g class="actor"><rect x="550" y="8" width="150" height="48" rx="4"/><text x="625" y="29">Verifier</text><text class="sub" x="625" y="46">third party</text></g>
+              <line class="life" x1="95" y1="56" x2="95" y2="344"/>
+              <line class="life" x1="360" y1="56" x2="360" y2="344"/>
+              <line class="life" x1="625" y1="56" x2="625" y2="344"/>
+
+              <g class="msg" style="--d:0s">
+                <text x="108" y="96"><tspan class="step">1</tspan>  TLS session, post-quantum key exchange</text>
+                <line x1="103" y1="108" x2="352" y2="108"/>
+                <path class="head" d="M95 108l9-4.5v9z"/><path class="head" d="M360 108l-9-4.5v9z"/>
+              </g>
+              <g class="msg" style="--d:.35s">
+                <text x="108" y="150"><tspan class="step">2</tspan>  Encrypted response from the server</text>
+                <line x1="352" y1="162" x2="103" y2="162"/>
+                <path class="head" d="M95 162l9-4.5v9z"/>
+              </g>
+              <g class="msg" style="--d:.7s">
+                <text x="108" y="210"><tspan class="step">3</tspan>  Commitment to the session transcript</text>
+                <line x1="95" y1="222" x2="617" y2="222"/>
+                <path class="head" d="M625 222l-9-4.5v9z"/>
+              </g>
+              <g class="msg accent" style="--d:1.05s">
+                <text x="108" y="266"><tspan class="step">4</tspan>  Proof that the data came from this server</text>
+                <line x1="95" y1="278" x2="617" y2="278"/>
+                <path class="head" d="M625 278l-9-4.5v9z"/>
+              </g>
+              <g class="ok" style="--d:1.45s"><rect x="548" y="298" width="154" height="34" rx="4"/><text x="625" y="320">&#10003; Provenance attested</text></g>
+            </svg>
+            </div>
+            <figcaption><b>Figure 1.</b> A TLS oracle in brief (simplified). The prover convinces a verifier that data it obtained over TLS really came from a given server, without the server&rsquo;s cooperation. My work studies how to keep this guarantee when the key exchange is post-quantum.</figcaption>
+          </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="recent" aria-labelledby="recent-title">
+    <div class="wrap">
+      <h2 class="section-title" id="recent-title">Recent</h2>
+      <div class="section-body">
+        <ol class="timeline">
+          <li><time datetime="2026">2026</time><span><i>Dodona</i>, a post-quantum TLS oracle for data provenance attestation, is under review at IEEE CSF 2027.</span></li>
+          <li><time datetime="2026">2026</time><span><i>SKE2SG</i>, a key establishment scheme for smart-grid cyber-physical systems, appeared in <i>IET Cyber-Physical Systems: Theory &amp; Applications</i>.</span></li>
+          <li><time datetime="2025-12">Dec 2025</time><span>Started my PhD at Universitat Rovira i Virgili with an FPI predoctoral grant.</span></li>
+          <li><time datetime="2025">2025</time><span>Three journal papers published, in IEEE TNSM, the IEEE Open Journal of the Communications Society, and Multimedia Tools and Applications.</span></li>
+          <li><time datetime="2024-04">2024&ndash;2025</time><span>Remote research assistant at the University of Greenwich, working on security for AI with Dr. Ehsan Nowroozi.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="publications" aria-labelledby="pubs-title">
+    <div class="wrap">
+      <h2 class="section-title" id="pubs-title">Selected publications</h2>
+      <div class="section-body">
+        <ul class="pubs">
+          <li class="pub">
+            <h3 class="pub-title">Dodona: Post-Quantum TLS Oracle for Data Provenance Attestation</h3>
+            <p class="pub-authors"><span class="me">A. Rahdari</span>, A. Belel, R. Trujillo-Rasua</p>
+            <p class="pub-venue">Submitted to <i>40th IEEE Computer Security Foundations Symposium (CSF)</i>, 2027.</p>
+            <div class="pub-meta"><span class="tag tag-review">Under review</span></div>
+          </li>
+          <li class="pub">
+            <h3 class="pub-title">FogRoam: Cloud-Free Handover Authentication for 6G Vehicular Networks</h3>
+            <p class="pub-authors"><span class="me">A. Rahdari</span>, R. Trujillo-Rasua, A. Belel, E. Nowroozi, S. Gorgin</p>
+            <p class="pub-venue">Submitted to <i>IEEE Transactions on Vehicular Technology</i>.</p>
+            <div class="pub-meta"><span class="tag tag-review">Under review</span></div>
+          </li>
+          <li class="pub">
+            <h3 class="pub-title">SKE2SG: A Secure Key Establishment Scheme for Smart Grid Cyber-Physical Systems Based on Elliptic Curve Cryptography</h3>
+            <p class="pub-authors"><span class="me">A. Rahdari</span>, B. Akhbari</p>
+            <p class="pub-venue"><i>IET Cyber-Physical Systems: Theory &amp; Applications</i>, vol. 11, no. 1, e70045, 2026.</p>
+            <div class="pub-meta"><a href="https://doi.org/10.1049/cps2.70045" rel="noopener">DOI: 10.1049/cps2.70045</a></div>
+          </li>
+          <li class="pub">
+            <h3 class="pub-title">A Survey on Privacy and Security in Distributed Cloud Computing: Exploring Federated Learning and Beyond</h3>
+            <p class="pub-authors"><span class="me">A. Rahdari</span>, E. Keshavarz, E. Nowroozi, R. Taheri, M. Hajizadeh, et al.</p>
+            <p class="pub-venue"><i>IEEE Open Journal of the Communications Society</i>, 2025.</p>
+            <div class="pub-meta"><a href="https://doi.org/10.1109/OJCOMS.2025.3560034" rel="noopener">DOI: 10.1109/OJCOMS.2025.3560034</a></div>
+          </li>
+        </ul>
+        <a class="more" href="/publications/">All publications</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="service" aria-labelledby="service-title">
+    <div class="wrap">
+      <h2 class="section-title" id="service-title">Service</h2>
+      <div class="section-body">
+        <p><b>Guest editor</b> of the special issue <i>Security and Privacy in IoT and Smart City: Current Challenges and Future Directions</i> in <i>Computers, Materials &amp; Continua</i>.</p>
+        <p><b>Reviewer</b> of 33 manuscripts for six journals, including <i>IEEE Transactions on Network and Service Management</i>, <i>Computer Networks</i>, <i>Vehicular Communications</i> and <i>Multimedia Tools and Applications</i>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="group" aria-labelledby="group-title">
+    <div class="wrap">
+      <h2 class="section-title" id="group-title">Group life</h2>
+      <div class="section-body">
+        <ul class="photo-strip">
+            <li><figure><a href="/gallery/#lunch-research-group"><picture><source type="image/webp" srcset="/assets/img/lunch-research-group-thumb.webp"><img src="/assets/img/lunch-research-group-thumb.jpg" alt="Five colleagues smiling around a Korean barbecue table" width="760" height="570" loading="lazy" decoding="async"></picture></a><figcaption>Lunch with the research group</figcaption></figure></li>
+            <li><figure><a href="/gallery/#bbq-research-group"><picture><source type="image/webp" srcset="/assets/img/bbq-research-group-thumb.webp"><img src="/assets/img/bbq-research-group-thumb.jpg" alt="Group photo of eleven people on benches under a pine tree" width="760" height="1352" loading="lazy" decoding="async"></picture></a><figcaption>BBQ with the research group</figcaption></figure></li>
+            <li><figure><a href="/gallery/#hiking-research-group"><picture><source type="image/webp" srcset="/assets/img/hiking-research-group-thumb.webp"><img src="/assets/img/hiking-research-group-thumb.jpg" alt="Four people with backpacks walking along a tree-lined path" width="760" height="507" loading="lazy" decoding="async"></picture></a><figcaption>Hiking with the research group</figcaption></figure></li>
+            <li><figure><a href="/gallery/#dinner-research-group"><picture><source type="image/webp" srcset="/assets/img/dinner-research-group-thumb.webp"><img src="/assets/img/dinner-research-group-thumb.jpg" alt="Five colleagues holding tacos at a wooden table" width="760" height="570" loading="lazy" decoding="async"></picture></a><figcaption>Dinner with the research group</figcaption></figure></li>
+        </ul>
+        <a class="more" href="/gallery/">See the gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <div class="section-body contact-grid">
+        <div>
+          <h3>Email</h3>
+          <p class="big"><a href="mailto:ahmad.rahdari@urv.cat">ahmad.rahdari@urv.cat</a></p>
+        </div>
+        <div>
+          <h3>Phone</h3>
+          <p class="big"><a href="tel:+34678245268">+34 678 245 268</a></p>
+        </div>
+        <div>
+          <h3>Office</h3>
+          <address>Lab 133, Department of Computer Engineering and Mathematics (DEIM)<br>Universitat Rovira i Virgili<br>Avinguda dels Països Catalans 26<br>43007 Tarragona, Spain</address>
+        </div>
+        <div>
+          <h3>Elsewhere</h3>
+          <p><a href="https://scholar.google.com/citations?user=c0KZnqcAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a>, <a href="https://orcid.org/0000-0002-6368-1435" rel="noopener">ORCID</a>, <a href="https://www.linkedin.com/in/ahmad-rahdari" rel="noopener">LinkedIn</a>, <a href="https://github.com/ahmadrahdari" rel="noopener">GitHub</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Ahmad Rahdari. Universitat Rovira i Virgili, Tarragona.</p>
+    <p>Last updated November 2026. <a href="#">Back to top</a></p>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
