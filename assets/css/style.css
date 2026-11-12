@@ -101,10 +101,11 @@ h1, h2, h3 { margin: 0; font-weight: 400; color: var(--ink); }
 /* ---------- hero ---------- */
 .hero { padding: clamp(40px, 7vw, 88px) 0 clamp(40px, 6vw, 72px); }
 .hero .wrap { display: grid; grid-template-columns: minmax(240px, 360px) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
-.hero .portrait { margin-top: 10px; }
+.hero .portrait { margin-top: 0; }
 
 .portrait { margin: 0; position: relative; }
-.portrait img { width: 100%; aspect-ratio: 900 / 880; object-fit: cover; border-radius: 6px; background: var(--tint); box-shadow: 0 0 0 1px var(--rule); }
+.portrait picture { display: block; width: 100%; max-width: 320px; padding: 12px; margin: 0 auto 0 0; border: 1px solid var(--rule); border-radius: 50%; }
+.portrait img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; background: var(--tint); }
 .portrait figcaption { margin-top: 10px; font-size: 0.8125rem; color: var(--ink-3); }
 
 .hero h1 {
@@ -143,7 +144,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; color: var(--ink); }
 @media (max-width: 760px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 28px; }
   .hero .portrait { display: contents; }
-  .hero .portrait picture { max-width: 340px; order: 1; }
+  .hero .portrait picture { max-width: 260px; order: 1; }
   .hero .wrap > div { order: 2; }
   .hero .links { order: 3; margin-top: 0; }
   .figure { padding: 16px 14px 14px; }
