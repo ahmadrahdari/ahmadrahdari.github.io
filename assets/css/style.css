@@ -295,6 +295,11 @@ ol.pubs-numbered .pub::before {
 .site-footer { border-top: 1px solid var(--rule); padding: 28px 0 36px; font-size: 0.875rem; color: var(--ink-3); }
 .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; }
 .site-footer p { margin: 0; }
+.footer-id p + p { margin-top: 6px; }
+.footer-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
+.footer-logo { display: inline-block; line-height: 0; }
+.footer-logo img { height: 32px; width: auto; }
+.site-footer .wrap { align-items: flex-end; }
 .site-footer a { color: var(--ink-2); }
 
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
